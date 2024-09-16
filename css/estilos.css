@@ -1,0 +1,183 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* estilos de mobile */
+
+
+/* Estilos de header */
+header{
+    
+    background-color: #EDECE8;
+    text-align: center;
+    
+    
+
+}
+
+.header-menu{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    }
+
+
+
+
+header img{
+    height: 70px;
+    justify-content: right;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: -30px;
+   
+}
+
+header nav ul li a{
+    color: #625548;
+    text-decoration: none;
+    
+    
+}
+
+main{
+    text-align: center;
+    padding: 20px;
+    
+}
+
+main h1{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+/* Parrafo */
+
+p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.full-width-image { 
+
+    width: 100%;
+    background-size: cover;
+     
+    } 
+
+    /* Eras Tour */
+
+    /* Banner */
+
+
+
+    /* Tablas */
+   th{
+    padding: 50px;
+    text-transform: uppercase;
+
+   }
+
+   td{
+    padding: 30px;
+
+   }
+
+   a{
+    padding: 50px;
+   }
+
+   /* Discografia */
+
+
+   .cards-container{
+    display: flex;
+   }
+
+   .disco-1-imagen{
+    width: 300px;
+
+   }
+
+    /* Multimedia */
+    /* Imagenes galeria */
+
+
+    .foto-1{
+        text-align: center;
+        padding: 20px;
+        
+    }
+
+    .foto-2{
+        text-align: center;
+        padding: 20px;
+        
+    }
+
+    /* Formulario de contacto */
+
+    .container-form{
+        width: 100px; 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: left;
+        grid-gap: 50px;
+        margin-top: 90px;
+        
+    }
+
+    .container-form h2{
+        margin-bottom: 15px;
+        font-size: 50px;
+        
+    }
+
+    .container-form p{
+        font-size: 17px;
+        line-height: 1.6;
+        margin-bottom: 3; 
+    }
+
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: #EDECE8;
+
+} 
+
+/* estilos del footer */
+
+    footer{
+        text-align: center;
+        background-color: #EDECE8;
+        padding: 15px;
+
+    }
