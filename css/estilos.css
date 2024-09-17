@@ -3,76 +3,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-/* estilos de mobile */
-
-
-/* Estilos de header */
-header{
-    
-    background-color: #EDECE8;
-    text-align: center;
-    
     
 
 }
 
-.header-menu{
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-    }
 
 
+/* Inicio */
+
+.banner-principal{
+
+    width: 100%;
 
 
-header img{
-    height: 70px;
-    justify-content: right;
-}
 
-header nav ul li{
-    display: inline-block;
-    margin-left: -30px;
-   
-}
 
-header nav ul li a{
-    color: #625548;
-    text-decoration: none;
-    
-    
-}
-
-main{
-    text-align: center;
-    padding: 20px;
-    
-}
-
-main h1{
-    margin-bottom: 20px;
-    margin-top: 30px;
 }
 
 /* Parrafo */
 
-p{
-    font-size: 16px;
-    margin-bottom: 20px;
-}
 
-.full-width-image { 
 
-    width: 100%;
-    background-size: cover;
-     
-    } 
+
 
     /* Eras Tour */
 
@@ -96,32 +48,69 @@ p{
     padding: 50px;
    }
 
+   
+   
    /* Discografia */
+
+
 
 
    .cards-container{
     display: flex;
+    padding: 60px;
+    gap: 30px;
+    justify-content: center;
+    
    }
+
+   .card{
+    color: #625548;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+   }
+
+   .informacion{
+    padding: 0 20px 20px 20px;
+    margin-bottom: 20px;
+    font-size: smaller;
+    
+   }
+
 
    .disco-1-imagen{
     width: 300px;
+    
 
    }
+
+ 
 
     /* Multimedia */
     /* Imagenes galeria */
 
-
-    .foto-1{
-        text-align: center;
-        padding: 20px;
+    main{
+        margin: 30px 30px;   
+        display: grid;
+        grid-template-columns: 1fr;
         
+        row-gap: 2rem;
+        align-content: center;
+
     }
 
-    .foto-2{
-        text-align: center;
-        padding: 20px;
-        
+    
+
+    main div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main .img-dos, main .img-cinco{
+        display: none;
     }
 
     /* Formulario de contacto */
@@ -181,3 +170,50 @@ p{
         padding: 15px;
 
     }
+
+           /* estilos de tablet */
+
+@media screen and (min-width:600px){
+    main{
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 40%);
+        column-gap: 1.5rem;
+
+    }
+
+    main .img-cuatro{
+        grid-column: span 2;
+    }
+
+    }
+
+    /* estilos de desktop */
+
+    @media screen and (min-width:1024px){
+        main .img-dos, main .img-cinco{
+            display: block;
+        }
+
+        main{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 30% 30% 20%;
+        }
+
+        main .img-uno, main .img-tres{
+            grid-row: span 2;
+        }
+
+        main .img-dos, main .img-cuatro{
+            grid-column: span 1;
+        }
+
+        main .img-cinco{
+
+            grid-column: span 3;
+        }
+
+    }
+
+
+    
