@@ -21,30 +21,43 @@
 
     width: 100%;
 
+}
 
+main{
 
+  grid-template-columns: 1fr;
+  
+  row-gap: 2rem;
+  align-content: center;
+ 
 
 }
 
+
+
 /* Parrafo */
 
+.texto-inicio{
 
+    text-align: center;
+    padding: 20px;
+}
 
 
 
     /* Eras Tour */
 
-
-
-    
-    /* Banner */
-
-
-
     /* Tablas */
+
+    .container{
+
+        text-align: center;
+    }
+
    th{
     padding: 50px;
     text-transform: uppercase;
+    text-align: center;
 
    }
 
@@ -54,7 +67,7 @@
    }
 
    a{
-    padding: 50px;
+    padding: 200px;
    }
 
    
@@ -62,59 +75,32 @@
    /* Discografia */
 
 
-
-
-   .cards-container{
+.cards{
     display: flex;
-    padding: 60px;
-    gap: 30px;
     justify-content: center;
+    margin: 30px;
+    gap:40px;
     
-   }
+}
 
-   .card{
-    color: #625548;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
-   }
+   
 
-   .informacion{
-    padding: 0 20px 20px 20px;
-    margin-bottom: 20px;
-    font-size: smaller;
-    
-   }
-
-
-   .disco-1-imagen{
-    width: 300px;
-    
-
-   }
-
+.discografia{
+    text-align: center;
+}
  
 
     /* Multimedia */
     /* Imagenes galeria */
 
-    main{
-        /* margin: 30px 30px; */   
-        /* display: grid;  */
-        grid-template-columns: 1fr;
-        
-        row-gap: 2rem;
-        align-content: center;
-
-    }
-
     .contenedor{
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 2rem;
+          margin: 1.8rem 1.8rem;    
+          display: grid; 
+        grid-template-columns: 1fr;  
+        grid-template-rows: repeat(3 20%);
+        row-gap: 1.5rem;
         align-content: center;
+        
 
     }
 
@@ -124,6 +110,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        
+  
+        
+        
     }
 
     main .img-dos, main .img-cinco{
@@ -154,59 +144,69 @@
     padding-bottom: 1%;
 }
 
+.left{
+    text-align: left;
+}
+
 /* estilos del footer */
 
     footer{
         text-align: center;
         background-color: #EDECE8;
-        padding: 1rem;
+        padding: 10px;
         
-
     }
 
            /* estilos de tablet */
 
-@media screen and (min-width:600px){
-    main{
 
+
+@media screen and (min-width:600px){
+    header{
+        justify-content: space-between;
+        
+    }
+
+    .contenedor{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 40%);
         column-gap: 1.5rem;
-
     }
 
-    main .img-cuatro{
+    .contenedor, .img-cuatro{
         grid-column: span 2;
     }
 
-    }
+}
 
     /* estilos de desktop */
 
-    @media screen and (min-width:1024px){
-        main .img-dos, main .img-cinco{
-            display: block;
-        }
 
-        main{
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 30% 30% 20%;
-        }
+@media screen and (min-width:1024px){
+    .contenedor .img-dos, .contenedor .img-cinco{
+        display: block;
+    }
 
-        main .img-uno, main .img-tres{
-            grid-row: span 2;
-        }
+    .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30% 30% 20%;
+    }
 
-        main .img-dos, main .img-cuatro{
-            grid-column: span 1;
-        }
-
-        main .img-cinco{
-
-            grid-column: span 3;
-        }
+    .contenedor .img-uno, .contenedor .img-tres{
+        grid-row: span 2;
 
     }
+
+    .contenedor .img-dos, .contenedor .img-cuatro{
+        grid-column: span 1;
+    }
+
+    .contenedor .img-cinco{
+
+    
+        grid-column: span 3;
+    }
+}
 
 
     
