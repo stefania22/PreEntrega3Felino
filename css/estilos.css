@@ -66,9 +66,7 @@ main{
 
    }
 
-   a{
-    padding: 200px;
-   }
+ 
 
    
    
@@ -76,17 +74,24 @@ main{
 
 
 .cards{
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    gap:40px;
     
+    justify-content: center;
+   
+    
+
+    
+}
+
+.cards img{
+    padding: 10;
+    gap: 40px;
 }
 
    
 
 .discografia{
     text-align: center;
+    padding: 10px;
 }
  
 
@@ -122,6 +127,17 @@ main{
 
     /* Formulario de contacto */
 
+
+.row.single-form {
+        display: flex; 
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+.container-form form {
+        margin: 40px 0; 
+}
 
 .container-form form .campo, textarea{
     width: 100%;
@@ -177,6 +193,14 @@ main{
         grid-column: span 2;
     }
 
+    .cards{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        gap:40px;
+        
+    }
+
 }
 
     /* estilos de desktop */
@@ -205,6 +229,14 @@ main{
 
     
         grid-column: span 3;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        gap:40px;
+        
     }
 }
 
