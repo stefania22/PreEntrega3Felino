@@ -40,12 +40,19 @@ main{
 .texto-inicio{
 
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 
 
     /* Eras Tour */
+
+    /* titulos */
+
+    .texto-eras-tour{
+        padding: 20px;
+        text-align: center;
+    }
 
     /* Tablas */
 
@@ -91,7 +98,9 @@ main{
 
 .discografia{
     text-align: center;
-    padding: 10px;
+    padding: 30px;
+    margin: 0;
+    
 }
  
 
@@ -198,6 +207,7 @@ main{
         justify-content: center;
         margin: 30px;
         gap:40px;
+        flex-wrap: wrap;
         
     }
 
@@ -236,6 +246,7 @@ main{
         justify-content: center;
         margin: 30px;
         gap:40px;
+        flex-wrap: wrap;
         
     }
 }
