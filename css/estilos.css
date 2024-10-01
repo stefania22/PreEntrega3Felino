@@ -59,6 +59,7 @@ main{
     .container{
 
         text-align: center;
+        padding: 20px;
     }
 
    th{
