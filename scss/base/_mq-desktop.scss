@@ -1,0 +1,78 @@
+/* Media Queries */
+@media screen and (min-width: 600px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 40%);
+        column-gap: 1.5rem;
+    }
+
+    .texto-inicio {
+        font-size: 1.5rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .card {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30% 30% 20%;
+
+        .img-dos,
+        .img-cinco {
+            display: block;
+        }
+
+        .img-uno,
+        .img-tres {
+            grid-row: span 2;
+        }
+
+        .img-dos,
+        .img-cuatro {
+            grid-column: span 1;
+        }
+
+        .img-cinco {
+            grid-column: span 3;
+        }
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .banner-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .banner-principal img {
+        opacity: 90%;
+        transition: all 7s ease-in-out;
+    }
+}
