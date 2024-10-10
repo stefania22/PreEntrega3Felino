@@ -150,7 +150,7 @@ th, td {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: column;
+    
     
     
     img{
@@ -405,6 +405,8 @@ footer {
     }
   
   }
+
+  /* estilos de Desktop */
   
   @media screen and (min-width: 1024px) {
   
