@@ -60,7 +60,7 @@ header{
 
 .nav-link {
     padding: 10px 15px; 
-    font-size: 1.5rem; 
+    font-size: $fuente-normal; 
     margin-right: 0px; 
 
   }
@@ -273,7 +273,7 @@ footer {
         justify-content: space-between;
         
     }
-}
+
 
 .contenedor{
     grid-template-columns: repeat(2, 1fr);
@@ -359,6 +359,9 @@ footer {
     border-top-right-radius: 8px;
 }
 
+}
+
+
     /* estilos de desktop */
 
     @media screen and (min-width: 1024px) {
@@ -378,7 +381,7 @@ footer {
             grid-column: span 3;
         }
     }
-}
+
 
 /* Discografía */
 
@@ -472,5 +475,7 @@ footer {
     /* Discografía */
     .card {
         flex: 1 1 calc(33.333% - 30px); 
+    }
+
     }
     
