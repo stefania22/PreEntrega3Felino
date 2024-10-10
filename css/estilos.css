@@ -1,527 +1,408 @@
+@charset "UTF-8";
 /* Reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
+/* variables de color */
+/* variables de tamaño de fuente */
+/* variables de transiciones */
+/* estilos */
 /* Inicio */
-
- .banner-principal{
-    display: none;
+.banner-principal {
+  display: none;
 }
 
-
-
-
-
-.banner-vertical img:hover{
-    transform: scale(1.1);
+.banner-vertical img:hover {
+  transform: scale(1.1);
 }
 
-
-.banner-vertical img{
-
-    width: 100%;
-    opacity: 90%;
-    transition: all 0.5s ease-in-out;
-    z-index: 0;
-    
-    
-
-}
-
-.texto-inicio h1{
-    font-size: 2rem;
-    
+.banner-vertical img {
+  width: 100%;
+  opacity: 90%;
+  transition: all 0.5s ease-in-out;
+  z-index: 0;
 }
 
 .texto-inicio {
-
-    font-size: 0.7rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
+  font-size: 0.7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
   padding: 15px;
   width: 100%;
-  line-height: 2.0;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 1;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-
-    
+  line-height: 2;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.texto-inicio h1 {
+  font-size: 2rem;
 }
 
-header{
-    z-index: 10;
-    position: relative;
-
+header {
+  z-index: 10;
+  position: relative;
 }
 
 .nav-link {
-    padding: 10px 15px; 
-    font-size: 1.5rem; 
-    margin-right: 0px; 
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  margin-right: 0px;
+}
 
-  }
-
-main{
-
+main {
   grid-template-columns: 1fr;
-  
   row-gap: 2rem;
   align-content: center;
- 
-
 }
-
-
 
 /* Parrafo */
-
-.texto-inicio{
-
-    text-align: center;
-    padding: 30px;
+.texto-inicio {
+  text-align: center;
+  padding: 30px;
 }
 
-
-
-    /* Eras Tour */
-
-    /* titulos */
-
-    .texto-eras-tour{
-        padding: 20px;
-        text-align: center;
-    }
-
-    /* Tablas */
-
-    .banner-principal-eras-tour img {
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-        height: auto; /* Mantiene la relación de aspecto de la imagen */
-        max-width: 600px; /* Opcional: limita el tamaño máximo de la imagen */
-        display: block; /* Elimina espacios debajo de la imagen */
-        margin: 0 auto; /* Centra la imagen */
-    }
-
-
-
-    .banner-principal-eras-tour {
-        text-align: center;
-    }
-    
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-    }
-    
-    th, td {
-        padding: 15px;
-        text-align: left;
-        border: 1px solid #ddd;
-    }
-    
-
-    
-    .btn {
-        padding: 10px 15px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    .btn:hover {
-        background-color: #0056b3;
-    }
-
- 
-.taylor-contacto{
-    width: 100%;
-    height: auto;
-    
-    opacity: 0.9;
-    border-radius: 8px;
+/* Eras Tour */
+.texto-eras-tour {
+  padding: 20px;
+  text-align: center;
 }
-   
-   
-   /* Discografia */
 
+.banner-principal-eras-tour {
+  text-align: center;
+}
+.banner-principal-eras-tour img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
 
-   .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Tablas */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.taylor-contacto {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  border-radius: 8px;
+}
+
+/* Discografia */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards img {
+  max-width: 100%;
 }
 
 .card {
-    flex: 1 1 100%; /* Toma todo el ancho en móviles */
-    max-width: 30rem; /* Limita el ancho máximo */
-    margin: 10px; /* Espaciado entre tarjetas */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-radius: 8px;
+  flex: 1 1 100%;
+  max-width: 30rem;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.cards img{
-
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la card */
-    height: auto; /* Mantiene la relación de aspecto */
-}
-
-/* Estilo de imágenes */
 .card-img-top {
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-
-   
-
-.discografia{
-    text-align: center;
-    padding: 30px;
-    margin: 0;
-    
+.discografia {
+  text-align: center;
+  padding: 30px;
+  margin: 0;
 }
- 
 
-    /* Multimedia */
-    /* Imagenes galeria */
+/* Multimedia */
+.contenedor {
+  margin: 1.8rem 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3 20%);
+  row-gap: 1.5rem;
+  align-content: center;
+}
 
-    .contenedor{
-          margin: 1.8rem 1.8rem;    
-          display: grid; 
-        grid-template-columns: 1fr;  
-        grid-template-rows: repeat(3 20%);
-        row-gap: 1.5rem;
-        align-content: center;
-        
+main div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    }
+main .img-dos, main .img-cinco {
+  display: none;
+}
 
-    
-
-    main div img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        
-  
-        
-        
-    }
-
-    main .img-dos, main .img-cinco{
-        display: none;
-    }
-
-    /* Formulario de contacto */
-
-
+/* Formulario de contacto */
 .row.single-form {
-        display: flex; 
-        align-items: center;
-        flex-direction: column;
-        
-    }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 .container-form form {
-        margin: 40px 0; 
+  margin: 40px 0;
 }
 
-.container-form form .campo, textarea{
-    width: 100%;
-    padding: 15px 10px;
-    font-size: 15px;
-    margin-bottom: 30px;
-    border-radius: 3px;
-    outline: 0px;
+.container-form form .campo, textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  outline: 0px;
 }
 
-.container-form form textarea{
-    max-width: 600px;
-    min-width: 600px;
-    min-height: 140px;
-    max-height: 150px;
+.container-form form textarea {
+  max-width: 600px;
+  min-width: 600px;
+  min-height: 140px;
+  max-height: 150px;
 }
 
-.form-area{
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin: 40px;
+.form-area {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin: 40px;
 }
 
-.left{
-    text-align: left;
+.left {
+  text-align: left;
 }
 
-/* estilos del footer */
+/* Estilos del footer */
+footer {
+  text-align: center;
+  background-color: #EDECE8;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    footer{
-        text-align: center;
-        background-color: #EDECE8;
-        padding: 10px;
-        position: relative;
-        z-index: 10;
-        
-    }
+/* estilos de tablet */
+@media screen and (min-width: 600px) {
+  header {
+    justify-content: space-between;
+  }
+}
+.contenedor {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 40%);
+  column-gap: 1.5rem;
+}
+.contenedor .img-cuatro {
+  grid-column: span 2;
+}
 
-           /* estilos de tablet */
+/* Discografía */
+.card {
+  width: auto;
+}
 
+.cards {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 
-
-@media screen and (min-width:600px){
-    header{
-        justify-content: space-between;
-        
-    }
-
-    /* Galeria */
-
-    .contenedor{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 40%);
-        column-gap: 1.5rem;
-    }
-
-    .contenedor, .img-cuatro{
-        grid-column: span 2;
-    }
-
-
-    /* Discografía */
-
-    .card {
-        width: auto;
-      }
-
-      .cards {
-
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-      }
-
-    /* Inicio */
-
-    .texto-inicio h1{
-        font-size: 3rem;
-        
-    }
-    
-    .texto-inicio {
-    
-        font-size: 1.5rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-      padding: 15px;
-      width: 100%;
-      line-height: 2.0;
-        transform: translate(-50%, -50%);
-        color: white;
-        z-index: 1;
-        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-
+.texto-inicio {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  line-height: 2;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.texto-inicio h1 {
+  font-size: 3rem;
 }
 
 /* eras tour */
-
 .banner-principal-eras-tour img {
-    max-width: 100%; 
-    margin: 0 auto; 
-
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* discografía */
 .discografia {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
-
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    max-width: 100%;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
 }
 
-
 .card {
-    flex: 1 1 calc(50% - 30px); 
-    max-width: 30rem; 
-    margin: 15px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.2s; 
-    
+  flex: 1 1 calc(50% - 30px);
+  max-width: 30rem;
+  margin: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s;
 }
 
 .card:hover {
-    transform: scale(1.02); 
+  transform: scale(1.02);
 }
 
 .card-img-top {
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
+/* estilos de desktop */
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 30% 20%;
+  }
+  .contenedor .img-dos, .contenedor .img-cinco {
+    display: block;
+  }
+  .contenedor .img-uno, .contenedor .img-tres {
+    grid-row: span 2;
+  }
+  .contenedor .img-dos, .contenedor .img-cuatro {
+    grid-column: span 1;
+  }
+  .contenedor .img-cinco {
+    grid-column: span 3;
+  }
+}
+/* Discografía */
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
 
+/* Inicio */
+.banner-vertical {
+  display: none;
+}
 
-    /* estilos de desktop */
+.banner-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.banner-principal img {
+  width: 100%;
+  opacity: 90%;
+  transition: all 7s ease-in-out;
+}
+.banner-principal img:hover {
+  transform: scale(1.1);
+}
 
-
-@media screen and (min-width:1024px){
-
-    /* Galeria */
-    .contenedor .img-dos, .contenedor .img-cinco{
-        display: block;
-    }
-
-    .contenedor{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 30% 30% 20%;
-    }
-
-    .contenedor .img-uno, .contenedor .img-tres{
-        grid-row: span 2;
-
-    }
-
-    .contenedor .img-dos, .contenedor .img-cuatro{
-        grid-column: span 1;
-    }
-
-    .contenedor .img-cinco{
-
-    
-        grid-column: span 3;
-    }
-
-    /* Discografía */
-
-    .cards{
-        display: flex;
-        justify-content: center;
-        margin: 30px;
-        gap:40px;
-        flex-wrap: wrap;
-        
-    }
-
-    /* Inicio */
-
-
-    .banner-vertical{
-        display: none;
-    }
-
-
-    .banner-principal{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        
-        
-        
-        
-    }
-    
-    .banner-principal img:hover{
-        transform: scale(1.1);
-    }
-    
-    
-    .banner-principal img{
-    
-        width: 100%;
-        opacity: 90%;
-        transition: all 7s ease-in-out;
-        
-        
-    
-    }
-    
-    .texto-inicio h1{
-        font-size: 5rem;
-    }
-    
-    .texto-inicio {
-    
-        font-size: 1.5rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+.texto-inicio {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.texto-inicio h1 {
+  font-size: 5rem;
 }
 
 /* eras tour */
-
-.container{
-
-display: flex;
-justify-content: center;
-gap: 20px;
-    
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.col{
-    flex: 1;
-    max-width: 400px;
+.col {
+  flex: 1;
+  max-width: 400px;
 }
 
-
-table{
-    width: 100%;
-    border-collapse: collapse;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-th{
-padding: 20px;
-text-transform: uppercase;
-text-align: center;
-
+th {
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-td{
-padding: 15px;
-
+td {
+  padding: 15px;
 }
 
 .banner-principal-eras-tour img {
-    max-width: 100%; 
-    margin: 0 auto; 
+  max-width: 100%;
+  margin: 0 auto;
 }
-
 
 /* Discografía */
 .card {
-    flex: 1 1 calc(33.333% - 30px); 
+  flex: 1 1 calc(33.333% - 30px);
 }
-}
+
+/*# sourceMappingURL=estilos.css.map */

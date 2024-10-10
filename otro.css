@@ -1,0 +1,110 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+
+
+
+   
+   
+   /* Discografia */
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* estilos de desktop */
+
+
+@media screen and (min-width:1024px){
+
+    /* Galeria */
+    .contenedor .img-dos, .contenedor .img-cinco{
+        display: block;
+    }
+
+
+
+
+
+    /* Discografía */
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        gap:40px;
+        flex-wrap: wrap;
+        
+    }
+
+    /* Inicio */
+
+
+    
+
+
+/* eras tour */
+
+.container{
+
+display: flex;
+justify-content: center;
+gap: 20px;
+    
+}
+
+.col{
+    flex: 1;
+    max-width: 400px;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+padding: 20px;
+text-transform: uppercase;
+text-align: center;
+
+}
+
+td{
+padding: 15px;
+
+}
+
+.banner-principal-eras-tour img {
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+
+/* Discografía */
+.card {
+    flex: 1 1 calc(33.333% - 30px); 
+}
