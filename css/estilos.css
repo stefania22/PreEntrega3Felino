@@ -235,10 +235,17 @@ footer {
     grid-template-rows: repeat(2, 40%);
     column-gap: 1.5rem;
   }
-  .contenedor .img-cuatro {
+  .img-cuatro {
     grid-column: span 2;
   }
   /* Discografía */
+  .card {
+    width: auto;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
   .texto-inicio {
     font-size: 1.5rem;
     position: absolute;
@@ -261,7 +268,7 @@ footer {
     max-width: 100%;
     margin: 0 auto;
   }
-  /* discografía */
+  /* Discografía */
   .discografia {
     padding: 20px;
     text-align: center;
@@ -271,16 +278,13 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
   }
   .card {
     max-width: 30rem;
     margin: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     transition: transform 0.2s;
-    width: auto;
   }
   .card:hover {
     transform: scale(1.02);
@@ -291,22 +295,21 @@ footer {
     border-top-right-radius: 8px;
   }
 }
-/* estilos de desktop */
 @media screen and (min-width: 1024px) {
   .contenedor {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30% 30% 20%;
   }
-  .contenedor .img-dos, .contenedor .img-cinco {
+  .img-dos, .img-cinco {
     display: block;
   }
-  .contenedor .img-uno, .contenedor .img-tres {
+  .img-uno, .img-tres {
     grid-row: span 2;
   }
-  .contenedor .img-dos, .contenedor .img-cuatro {
+  .img-dos, .img-cuatro {
     grid-column: span 1;
   }
-  .contenedor .img-cinco {
+  .img-cinco {
     grid-column: span 3;
   }
   /* Discografía */

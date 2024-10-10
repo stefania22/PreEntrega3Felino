@@ -268,210 +268,316 @@ footer {
 
 /* estilos de tablet */
 
-@media screen and (min-width:600px){
-    header{
-        justify-content: space-between;
-        
+@media screen and (min-width:600px) {
+
+    header {
+  
+      justify-content: space-between;
+  
     }
-
-
-.contenedor{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 40%);
-    column-gap: 1.5rem;
-    .img-cuatro{
-        grid-column: span 2;
+  
+    .contenedor {
+  
+      grid-template-columns: repeat(2, 1fr);
+  
+      grid-template-rows: repeat(2, 40%);
+  
+      column-gap: 1.5rem;
+  
     }
-}
-
-/* Discografía */
-
-
-
-.texto-inicio {
-    
-    font-size: $fuente-normal;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-  padding: 15px;
-  width: 100%;
-  line-height: 2.0;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 1;
-    text-shadow: 0 0 8px $color-sombra-texto;
-    h1{
-        font-size: $fuente-x-grande;
+  
+    .img-cuatro {
+  
+      grid-column: span 2;
+  
     }
-
-}
-
-/* eras tour */
-
-.banner-principal-eras-tour img {
-    max-width: 100%; 
-    margin: 0 auto; 
-
-}
-
-/* discografía */
-.discografia {
-    padding: 20px;
-    text-align: center;
-}
-
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    max-width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    
-}
-
-
-.card {
-    
-    max-width: 30rem; 
-    margin: 15px; 
-    box-shadow: 0 2px 5px $color-sombra-texto;
-    border-radius: 8px;
-    transition: transform 0.2s; 
-    width: auto;
-    
-}
-
-.card:hover {
-    transform: scale(1.02); 
-}
-
-.card-img-top {
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-}
-
-
-    /* estilos de desktop */
-
-    @media screen and (min-width: 1024px) {
-        .contenedor{
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 30% 30% 20%;
-            .img-dos, .img-cinco{
-                display: block;
-            }
-            .img-uno, .img-tres{
-                grid-row: span 2;
-        }
-        .img-dos, .img-cuatro{
-            grid-column: span 1;
-        }
-        .img-cinco{
-            grid-column: span 3;
-        }
-    }
-
-
-/* Discografía */
-
-.cards{
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    gap:40px;
-    flex-wrap: wrap;
-    
-}
-
-    /* Inicio */
-
-
-    .banner-vertical{
-        display: none;
-    }
-
-
-    .banner-principal{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        img{
-            width: 100%;
-            opacity: 90%;
-            transition: all 7s ease-in-out;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-        }
-           
-        .texto-inicio {
-    
-            font-size: $fuente-normal;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-            h1{
-                font-size: $fuente-xx-grande;
-            }
-    }
-    /* eras tour */
-
-.container{
-
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-        
-    }
-    
-    .col{
-        flex: 1;
-        max-width: 400px;
-    }
-    
-    
-    table{
-        width: 100%;
-        border-collapse: collapse;
-    }
-    
-    th{
-    padding: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    
-    }
-    
-    td{
-    padding: 15px;
-    
-    }
-    
-    .banner-principal-eras-tour img {
-        max-width: 100%; 
-        margin: 0 auto; 
-    }
-    
-    
+  
     /* Discografía */
+  
     .card {
-        flex: 1 1 calc(33.333% - 30px); 
+  
+      width: auto;
+  
     }
-
+  
+    .cards {
+  
+      grid-template-columns: repeat(2, 1fr);
+  
+      gap: 20px;
+  
     }
-    
+  
+    .texto-inicio {
+  
+      font-size: 1.5rem;
+  
+      position: absolute;
+  
+      top: 50%;
+  
+      left: 50%;
+  
+      text-align: center;
+  
+      padding: 15px;
+  
+      width: 100%;
+  
+      line-height: 2.0;
+  
+      transform: translate(-50%, -50%);
+  
+      color: white;
+  
+      z-index: 1;
+  
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  
+    }
+  
+    .texto-inicio h1 {
+  
+      font-size: 3rem;
+  
+    }
+  
+    /* eras tour */
+  
+    .banner-principal-eras-tour img {
+  
+      max-width: 100%;
+  
+      margin: 0 auto;
+  
+    }
+  
+    /* Discografía */
+  
+    .discografia {
+  
+      padding: 20px;
+  
+      text-align: center;
+  
+    }
+  
+    .cards {
+  
+      display: flex;
+  
+      flex-wrap: wrap;
+  
+      justify-content: center;
+  
+      max-width: 100%;
+  
+    }
+  
+    .card {
+  
+      max-width: 30rem;
+  
+      margin: 15px;
+  
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+      border-radius: 8px;
+  
+      transition: transform 0.2s;
+  
+    }
+  
+    .card:hover {
+  
+      transform: scale(1.02);
+  
+    }
+  
+    .card-img-top {
+  
+      width: 100%;
+  
+      border-top-left-radius: 8px;
+  
+      border-top-right-radius: 8px;
+  
+    }
+  
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
+    .contenedor {
+  
+      grid-template-columns: repeat(3, 1fr);
+  
+      grid-template-rows: 30% 30% 20%;
+  
+    }
+  
+    .img-dos, .img-cinco {
+  
+      display: block;
+  
+    }
+  
+    .img-uno, .img-tres {
+  
+      grid-row: span 2;
+  
+    }
+  
+    .img-dos, .img-cuatro {
+  
+      grid-column: span 1;
+  
+    }
+  
+    .img-cinco {
+  
+      grid-column: span 3;
+  
+    }
+  
+    /* Discografía */
+  
+    .cards {
+  
+      display: flex;
+  
+      justify-content: center;
+  
+      margin: 30px;
+  
+      gap: 40px;
+  
+      flex-wrap: wrap;
+  
+    }
+  
+    /* Inicio */
+  
+    .banner-vertical {
+  
+      display: none;
+  
+    }
+  
+    .banner-principal {
+  
+      display: flex;
+  
+      flex-direction: column;
+  
+      align-items: center;
+  
+      position: relative;
+  
+      overflow: hidden;
+  
+      cursor: pointer;
+  
+    }
+  
+    .banner-principal img {
+  
+      width: 100%;
+  
+      opacity: 90%;
+  
+      transition: all 7s ease-in-out;
+  
+    }
+  
+    .banner-principal img:hover {
+  
+      transform: scale(1.1);
+  
+    }
+  
+    .texto-inicio {
+  
+      font-size: 1.5rem;
+  
+      position: absolute;
+  
+      top: 50%;
+  
+      left: 50%;
+  
+      transform: translate(-50%, -50%);
+  
+      color: white;
+  
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  
+    }
+  
+    .texto-inicio h1 {
+  
+      font-size: 5rem;
+  
+    }
+  
+    /* eras tour */
+  
+    .container {
+  
+      display: flex;
+  
+      justify-content: center;
+  
+      gap: 20px;
+  
+    }
+  
+    .col {
+  
+      flex: 1;
+  
+      max-width: 400px;
+  
+    }
+  
+    table {
+  
+      width: 100%;
+  
+      border-collapse: collapse;
+  
+    }
+  
+    th {
+  
+      padding: 20px;
+  
+      text-transform: uppercase;
+  
+      text-align: center;
+  
+    }
+  
+    td {
+  
+      padding: 15px;
+  
+    }
+  
+    .banner-principal-eras-tour img {
+  
+      max-width: 100%;
+  
+      margin: 0 auto;
+  
+    }
+  
+    /* Discografía */
+  
+    .card {
+  
+      flex: 1 1 calc(33.333% - 30px);
+  
+    }
+  
+  }
