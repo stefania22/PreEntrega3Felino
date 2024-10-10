@@ -239,13 +239,6 @@ footer {
     grid-column: span 2;
   }
   /* Discografía */
-  .card {
-    width: auto;
-  }
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
   .texto-inicio {
     font-size: 1.5rem;
     position: absolute;
@@ -278,13 +271,16 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
   .card {
     max-width: 30rem;
     margin: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
     border-radius: 8px;
     transition: transform 0.2s;
+    width: auto;
   }
   .card:hover {
     transform: scale(1.02);

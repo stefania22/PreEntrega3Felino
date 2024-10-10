@@ -286,18 +286,11 @@ footer {
 
 /* Discografía */
 
-.card {
-    width: auto;
-}
 
-.cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
 
 .texto-inicio {
     
-    font-size: 1.5rem;
+    font-size: $fuente-normal;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -308,9 +301,9 @@ footer {
     transform: translate(-50%, -50%);
     color: white;
     z-index: 1;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 8px $color-sombra-texto;
     h1{
-        font-size: 3rem;
+        font-size: $fuente-x-grande;
     }
 
 }
@@ -335,6 +328,8 @@ footer {
     flex-wrap: wrap;
     justify-content: center; 
     max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     
 }
 
@@ -343,9 +338,10 @@ footer {
     
     max-width: 30rem; 
     margin: 15px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px $color-sombra-texto;
     border-radius: 8px;
     transition: transform 0.2s; 
+    width: auto;
     
 }
 
@@ -422,7 +418,7 @@ footer {
            
         .texto-inicio {
     
-            font-size: 1.5rem;
+            font-size: $fuente-normal;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -430,7 +426,7 @@ footer {
             color: white;
             text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
             h1{
-                font-size: 5rem;
+                font-size: $fuente-xx-grande;
             }
     }
     /* eras tour */
