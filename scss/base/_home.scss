@@ -209,10 +209,10 @@ th, td {
   }
 
   main{
-   .img-dos, .img-cinco{
-      display: none;
-  }
-}
+    .img-dos, .img-cinco{
+       display: none;
+   }
+ }
   
 
 /* Formulario de contacto */
@@ -276,13 +276,14 @@ footer {
   
     }
   
-    .contenedor {
+   main .contenedor {
   
       grid-template-columns: repeat(2, 1fr);
   
       grid-template-rows: repeat(2, 40%);
   
       column-gap: 1.5rem;
+      
   
     }
   
@@ -410,17 +411,15 @@ footer {
   
   @media screen and (min-width: 1024px) {
   
-    .contenedor {
-  
-      grid-template-columns: repeat(3, 1fr);
-  
-      grid-template-rows: 30% 30% 20%;
-  
+     .contenedor .img-dos, .contenedor .img-cinco{
+        display: block;
     }
-  
-    .img-dos, .img-cinco {
-  
-      display: block;
+
+     .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30% 30% 20%;
+        gap: 1.5rem;
+    }
   
     }
   
@@ -582,4 +581,4 @@ footer {
   
     }
   
-  }
+  
