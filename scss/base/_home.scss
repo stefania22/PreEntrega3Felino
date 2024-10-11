@@ -276,7 +276,7 @@ footer {
   
     }
   
-   main .contenedor {
+    .contenedor {
   
       grid-template-columns: repeat(2, 1fr);
   
@@ -421,7 +421,7 @@ footer {
         gap: 1.5rem;
     }
   
-    }
+    
   
     .img-uno, .img-tres {
   
@@ -581,4 +581,5 @@ footer {
   
     }
   
+  }
   
